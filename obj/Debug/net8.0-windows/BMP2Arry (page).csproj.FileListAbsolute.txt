@@ -1,0 +1,16 @@
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\bin\Debug\net8.0-windows\BMP2Arry (page).exe
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\bin\Debug\net8.0-windows\BMP2Arry (page).deps.json
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\bin\Debug\net8.0-windows\BMP2Arry (page).runtimeconfig.json
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\bin\Debug\net8.0-windows\BMP2Arry (page).dll
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\bin\Debug\net8.0-windows\BMP2Arry (page).pdb
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\obj\Debug\net8.0-windows\BMP2Arry (page).csproj.GenerateResource.cache
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\obj\Debug\net8.0-windows\BMP2Arry (page).GeneratedMSBuildEditorConfig.editorconfig
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\obj\Debug\net8.0-windows\BMP2Arry (page).AssemblyInfoInputs.cache
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\obj\Debug\net8.0-windows\BMP2Arry (page).AssemblyInfo.cs
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\obj\Debug\net8.0-windows\BMP2Arry (page).csproj.CoreCompileInputs.cache
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\obj\Debug\net8.0-windows\BMP2Arry (page).dll
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\obj\Debug\net8.0-windows\refint\BMP2Arry (page).dll
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\obj\Debug\net8.0-windows\BMP2Arry (page).pdb
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\obj\Debug\net8.0-windows\BMP2Arry (page).genruntimeconfig.cache
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\obj\Debug\net8.0-windows\ref\BMP2Arry (page).dll
+D:\for work\temp\workshorp\PC\BMP2Arry (page)\obj\Debug\net8.0-windows\BMP2Arry__page_.BMP2Array.resources

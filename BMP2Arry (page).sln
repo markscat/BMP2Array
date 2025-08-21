@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36127.28 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMP2Arry (page)", "BMP2Arry (page).csproj", "{FD5646F4-84C3-483D-B2A9-78291CC6A1D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD5646F4-84C3-483D-B2A9-78291CC6A1D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5646F4-84C3-483D-B2A9-78291CC6A1D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5646F4-84C3-483D-B2A9-78291CC6A1D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5646F4-84C3-483D-B2A9-78291CC6A1D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C18992C-A33A-4C7C-ADEA-2B815631AA56}
+	EndGlobalSection
+EndGlobal

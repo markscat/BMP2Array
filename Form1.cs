@@ -28,7 +28,104 @@ namespace BMP2Arry__page_
         }
 
         // ---------------- 載入 BMP 並處理 ----------------
+        //加入產生.h2檔,存放在../inc中
 
+        private void ReadFile_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Filter = "Image Files|*.bmp;*.jpg;*.png;*.gif";
+                ofd.Title = "Select an Image File";
+
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (Bitmap originalBmp = new Bitmap(ofd.FileName))
+                        {
+                            // 顯示原圖
+                            pictureBox1.Image?.Dispose();
+                            pictureBox1.Image = new Bitmap(originalBmp);
+
+                            int width = originalBmp.Width;
+                            int height = originalBmp.Height;
+
+                            // OLED 螢幕尺寸 128x64
+                            const int OLED_W = 128;
+                            const int OLED_H = 64;
+
+                            Bitmap workBmp;
+                            if (width > OLED_W || height > OLED_H)
+                            {
+                                workBmp = new Bitmap(OLED_W, OLED_H);
+                                using (Graphics g = Graphics.FromImage(workBmp))
+                                {
+                                    g.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                                    g.DrawImage(originalBmp, 0, 0, OLED_W, OLED_H);
+                                }
+                                width = OLED_W;
+                                height = OLED_H;
+                            }
+                            else
+                            {
+                                workBmp = new Bitmap(originalBmp);
+                            }
+
+                            // ---- 更新顯示 ----
+                            pictureBox1.Image?.Dispose();
+                            pictureBox1.Image = new Bitmap(workBmp);
+
+                            // 轉換成 SH1106 byte[] 陣列
+                            byte[] shArray = ConvertBmpToSH1106ByteArray(workBmp, (int)numericUpDown1.Value, checkBox1.Checked);
+
+                            // 生成 C 陣列字串
+                            string baseName = System.IO.Path.GetFileNameWithoutExtension(ofd.FileName);
+                            string cArray = ConvertByteArrayToCArrayString(shArray, baseName, width, height);
+                            textBox1.Text = cArray;
+
+                            // ---- 存成 .h 檔案到 ../inc ----
+                            try
+                            {
+                                string folderPath = System.IO.Path.Combine(Application.StartupPath, "..", "inc");
+                                System.IO.Directory.CreateDirectory(folderPath);
+
+                                string filePath = System.IO.Path.Combine(folderPath, baseName + ".h");
+                                System.IO.File.WriteAllText(filePath, cArray, Encoding.UTF8);
+
+                                MessageBox.Show($"檔案已存成 {filePath}", "完成", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("無法存檔。\n錯誤訊息: " + ex.Message, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+
+                            // ---- 渲染輸出預覽 ----
+                            int paddedHeight = (height + 7) & ~7;
+                            Bitmap preview = RenderSH1106Array(shArray, width, paddedHeight);
+
+                            pictureBoxPreview.Image?.Dispose();
+                            pictureBoxPreview.Image = preview;
+
+                            // 釋放
+                            workBmp.Dispose();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("無法讀取或處理圖片檔案。\n錯誤訊息: " + ex.Message, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+        /* 基本功能可用
         private void ReadFile_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog ofd = new OpenFileDialog())
@@ -98,7 +195,7 @@ namespace BMP2Arry__page_
                 }
             }
         }
-
+        */
 
         // ---------------- 將 byte[] 生成 C 陣列字串 ----------------
         // (優化: 使用 StringBuilder 提高效率)

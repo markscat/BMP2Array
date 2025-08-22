@@ -17,13 +17,11 @@ namespace BMP2Arry__page_
         {
             InitializeComponent();
 
-            //ReadFile.Click += ReadFile_Click; //<< 沒有任何多載符合委派eventhander
+
             numericUpDown1.Minimum = 0;
             numericUpDown1.Maximum = 255; // 亮度閾值建議範圍 0~255
             numericUpDown1.Value = 128;
-            //這邊執行之後會出現以下的問題
-            //System.ArgumentOutOfRangeException: ''128' 不是 'Value' 的有效值。'Value' 應該介於 'Minimum' 與 'Maximum' 之間。 (Parameter 'value')
-            //Actual value was 128.'
+
 
         }
 

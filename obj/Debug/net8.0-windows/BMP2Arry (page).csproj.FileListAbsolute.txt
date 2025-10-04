@@ -14,3 +14,20 @@ D:\for work\temp\workshorp\PC\BMP2Arry (page)\obj\Debug\net8.0-windows\BMP2Arry 
 D:\for work\temp\workshorp\PC\BMP2Arry (page)\obj\Debug\net8.0-windows\BMP2Arry (page).genruntimeconfig.cache
 D:\for work\temp\workshorp\PC\BMP2Arry (page)\obj\Debug\net8.0-windows\ref\BMP2Arry (page).dll
 D:\for work\temp\workshorp\PC\BMP2Arry (page)\obj\Debug\net8.0-windows\BMP2Arry__page_.BMP2Array.resources
+C:\Ethan\workshop\PC\BMP2Array\bin\Debug\net8.0-windows\BMP2Arry (page).exe
+C:\Ethan\workshop\PC\BMP2Array\bin\Debug\net8.0-windows\BMP2Arry (page).deps.json
+C:\Ethan\workshop\PC\BMP2Array\bin\Debug\net8.0-windows\BMP2Arry (page).runtimeconfig.json
+C:\Ethan\workshop\PC\BMP2Array\bin\Debug\net8.0-windows\BMP2Arry (page).dll
+C:\Ethan\workshop\PC\BMP2Array\bin\Debug\net8.0-windows\BMP2Arry (page).pdb
+C:\Ethan\workshop\PC\BMP2Array\obj\Debug\net8.0-windows\BMP2Arry__page_.BMP2Array.resources
+C:\Ethan\workshop\PC\BMP2Array\obj\Debug\net8.0-windows\BMP2Arry (page).csproj.GenerateResource.cache
+C:\Ethan\workshop\PC\BMP2Array\obj\Debug\net8.0-windows\BMP2Arry (page).GeneratedMSBuildEditorConfig.editorconfig
+C:\Ethan\workshop\PC\BMP2Array\obj\Debug\net8.0-windows\BMP2Arry (page).AssemblyInfoInputs.cache
+C:\Ethan\workshop\PC\BMP2Array\obj\Debug\net8.0-windows\BMP2Arry (page).AssemblyInfo.cs
+C:\Ethan\workshop\PC\BMP2Array\obj\Debug\net8.0-windows\BMP2Arry (page).csproj.CoreCompileInputs.cache
+C:\Ethan\workshop\PC\BMP2Array\obj\Debug\net8.0-windows\BMP2Arry (page).sourcelink.json
+C:\Ethan\workshop\PC\BMP2Array\obj\Debug\net8.0-windows\BMP2Arry (page).dll
+C:\Ethan\workshop\PC\BMP2Array\obj\Debug\net8.0-windows\refint\BMP2Arry (page).dll
+C:\Ethan\workshop\PC\BMP2Array\obj\Debug\net8.0-windows\BMP2Arry (page).pdb
+C:\Ethan\workshop\PC\BMP2Array\obj\Debug\net8.0-windows\BMP2Arry (page).genruntimeconfig.cache
+C:\Ethan\workshop\PC\BMP2Array\obj\Debug\net8.0-windows\ref\BMP2Arry (page).dll

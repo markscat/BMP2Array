@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BMP2Arry (page)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a075bc420b92cc0f2c62621d9b0af5cbe3a503f")]
 [assembly: System.Reflection.AssemblyProductAttribute("BMP2Arry (page)")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BMP2Arry (page)")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
